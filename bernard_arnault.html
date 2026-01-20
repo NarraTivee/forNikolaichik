@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бернар Арно</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: #f39c12;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            height: 95vh;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            padding: 20px;
+            background: #e67e22;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-btn {
+            padding: 10px 20px;
+            background: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #34495e;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .photo-cell {
+            width: 35%;
+            text-align: center;
+            background: #f8f9fa;
+        }
+
+        .photo-cell img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 5px;
+        }
+
+        .info-title {
+            background: #e67e22;
+            color: white;
+            text-align: center;
+        }
+
+        .label {
+            background: #fef9f3;
+            font-weight: 600;
+            width: 30%;
+        }
+
+        .value {
+            color: #333;
+        }
+
+        .activities {
+            background: #f39c12;
+            color: white;
+            text-align: center;
+        }
+
+        .activities-list table {
+            border: none;
+            background: #f8f9fa;
+        }
+
+        .activities-list td {
+            border: none;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            color: #333;
+        }
+
+        .activities-list tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-btn">← Назад</a>
+            <h1>Бернар Арно - Подробная биография</h1>
+        </div>
+        <div class="content">
+            <table>
+                <tr>
+                    <td class="photo-cell" rowspan="6">
+                        <img src="https://cdn.forbes.ru/files/profile/1-rts17bfo.jpg__1612337065__13416.jpg"
+                            alt="Бернар Арно">
+                    </td>
+                    <td colspan="2" class="info-title">Основная информация</td>
+                </tr>
+                <tr>
+                    <td class="label">Состояние:</td>
+                    <td class="value">$190 млрд</td>
+                </tr>
+                <tr>
+                    <td class="label">Компании:</td>
+                    <td class="value">LVMH (Louis Vuitton, Dior и др.)</td>
+                </tr>
+                <tr>
+                    <td class="label">Страна:</td>
+                    <td class="value">Франция</td>
+                </tr>
+                <tr>
+                    <td class="label">Возраст:</td>
+                    <td class="value">74 года</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="activities">Чем занимается:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="activities-list">
+                            <table>
+                                <tr>
+                                    <td>1. Глава LVMH - крупнейшего конгломерата предметов роскоши</td>
+                                </tr>
+                                <tr>
+                                    <td>2. Объединил более 70 брендов роскоши под управлением LVMH</td>
+                                </tr>
+                                <tr>
+                                    <td>3. Превратил семейный строительный бизнес в империю роскоши</td>
+                                </tr>
+                                <tr>
+                                    <td>4. Сочетает творческую свободу дизайнеров с финансовым контролем</td>
+                                </tr>
+                                <tr>
+                                    <td>5. Инвестирует в современное искусство и культурные проекты</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

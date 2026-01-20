@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ларри Пейдж</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: #9b59b6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            height: 95vh;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            padding: 20px;
+            background: #8e44ad;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-btn {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #2980b9;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .photo-cell {
+            width: 35%;
+            text-align: center;
+            background: #f8f9fa;
+        }
+
+        .photo-cell img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 5px;
+        }
+
+        .info-title {
+            background: #8e44ad;
+            color: white;
+            text-align: center;
+        }
+
+        .label {
+            background: #f5eef8;
+            font-weight: 600;
+            width: 30%;
+        }
+
+        .value {
+            color: #333;
+        }
+
+        .activities {
+            background: #9b59b6;
+            color: white;
+            text-align: center;
+        }
+
+        .activities-list table {
+            border: none;
+            background: #f8f9fa;
+        }
+
+        .activities-list td {
+            border: none;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            color: #333;
+        }
+
+        .activities-list tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-btn">← Назад</a>
+            <h1>Ларри Пейдж - Подробная биография</h1>
+        </div>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <td class="photo-cell" rowspan="6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg/400px-Larry_Page_in_the_European_Parliament%2C_17.06.2009_%28cropped%29.jpg"
+                            alt="Ларри Пейдж">
+                    </td>
+                    <td colspan="2" class="info-title">Основная информация</td>
+                </tr>
+                <tr>
+                    <td class="label">Состояние:</td>
+                    <td class="value">$111 млрд</td>
+                </tr>
+                <tr>
+                    <td class="label">Компании:</td>
+                    <td class="value">Google, Alphabet Inc.</td>
+                </tr>
+                <tr>
+                    <td class="label">Страна:</td>
+                    <td class="value">США</td>
+                </tr>
+                <tr>
+                    <td class="label">Возраст:</td>
+                    <td class="value">50 лет</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="activities">Чем занимается:</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="activities-list">
+                            <table>
+                                <tr>
+                                    <td>1. Соосновал Google в 1998 году вместе с Сергеем Брином</td>
+                                </tr>
+                                <tr>
+                                    <td>2. Разработал алгоритм PageRank для поиска</td>
+                                </tr>
+                                <tr>
+                                    <td>3. Создал холдинговую компанию Alphabet Inc. в 2015</td>
+                                </tr>
+                                <tr>
+                                    <td>4. Инвестирует в летающие автомобили и беспилотный транспорт</td>
+                                </tr>
+                                <tr>
+                                    <td>5. Поддерживает исследования в области ИИ и энергии</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

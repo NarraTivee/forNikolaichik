@@ -1,0 +1,206 @@
+/* Стили для страниц бизнесменов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.businessman-container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.back-button:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateX(-5px);
+}
+
+.businessman-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.businessman-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.businessman-header .subtitle {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+}
+
+.businessman-content {
+    margin-bottom: 40px;
+}
+
+.businessman-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #e1e8ed;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.businessman-table tr {
+    transition: background-color 0.3s ease;
+}
+
+.businessman-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.image-cell {
+    width: 35%;
+    padding: 20px;
+    vertical-align: top;
+    background-color: #f8f9fa;
+}
+
+.image-cell img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.label {
+    width: 30%;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+    border-right: 1px solid #e1e8ed;
+}
+
+.value {
+    padding: 15px 20px;
+    color: #555;
+    font-weight: 500;
+}
+
+.activities-header {
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.activities-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+.activities-cell {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.activities-list p {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-left: 4px solid #3498db;
+    border-radius: 0 5px 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.activities-list p:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.activities-list .number {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.businessman-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .businessman-container {
+        padding: 15px;
+    }
+
+    .businessman-header h1 {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .businessman-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .image-cell {
+        width: 100%;
+        display: block;
+    }
+
+    .image-cell img {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+}
